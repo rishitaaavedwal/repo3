@@ -1,4 +1,7 @@
 a=10
 b=5
-maximum=max(a,b)
+if a>b:
+    maximum=a
+else:
+    maximum=b
 print(maximum)
