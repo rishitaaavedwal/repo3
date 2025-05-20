@@ -1,5 +1,8 @@
-max_lambda= lambda a,b: a if a>b else b
+def find_max_bitwise(a,b)
+    diff=a-b
+    sign_bit=(diff>>31) & 1
+    return a-(sign_bit*diff)
 a=10
 b=5
-maximum=max_lambda(a,b)
+maximum=find_max_bitwise(a,b)
 print(maximum)
