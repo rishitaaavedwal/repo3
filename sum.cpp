@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 int main ()
 {
@@ -11,4 +12,7 @@ int main ()
 		cout<<a<<"is odd"<<endl;
 	}	return 0;
 	return a+b;
+int max (int a, int b)
+{
+	return std::max(a+b);
 }
