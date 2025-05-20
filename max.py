@@ -1,3 +1,5 @@
+import math
 a=10
 b=5
-print(a if a>=b else b)
+maximum=math.fmax(a,b)
+print(maximum)
