@@ -1,3 +1,4 @@
+import math
 a=10
 b=5
 maximum=np.maximum(a,b)
@@ -10,3 +11,5 @@ b=5
 maximum=find_max_bitwise(a,b)
 print(maximum)
 print(a if a>=b else b)
+maximum=math.fmax(a,b)
+print(maximum)
