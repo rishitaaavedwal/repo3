@@ -1,6 +1,7 @@
 #include <iostream>
 int main ()
 {
+<<<<<<< HEAD
 	int a=7;
 	if (a%2==0)
 	{
@@ -9,6 +10,9 @@ int main ()
 	else
 	{
 		cout<<a<<"is odd"<<endl;
-	}	return 0;
+	}
+	return 0;
+=======
 	return a+b;
+>>>>>>> test
 }
