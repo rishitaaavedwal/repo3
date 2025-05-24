@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include <stdbool.h>
 #include <math.h>
 int main()
@@ -11,6 +10,7 @@ int main()
 	while (i*i<n)
 	for (int i=2; i<=n/2; i++)
 	for (int i=1; i<sqrt(n)+1; i++)
+	for (int i=2; i*i<=n; i++)
 	{
 		if (i>1 n%i==0)
 		{
