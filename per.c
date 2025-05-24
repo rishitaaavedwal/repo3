@@ -3,8 +3,8 @@
 #include <stdbool.h>
 int main()
 {
-	int n=28, sum=1;
-	for (int i=2; i*i<=n; i++)
+	int n=28, sum=1, i=2;
+	while (i*i<n)
 	{
 		if (n%i==0)
 		{
@@ -14,6 +14,7 @@ int main()
 				sum+=n/i;
 			}
 		}
+		i++;
 	}
 	bool per=(n>1 && sum==n);
 	if (per)
