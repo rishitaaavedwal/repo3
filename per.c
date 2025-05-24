@@ -6,6 +6,8 @@ int main()
 	int n=28, sum=1;
 	bool per=false;
 	for (int i=2; i*i<=n; i++)
+	int n=28, sum=1, i=2;
+	while (i*i<n)
 	{
 		if (n%i==0)
 		{
@@ -24,6 +26,7 @@ int main()
 				sum+=n/i;
 			}
 		}
+		i++;
 	}
 	if (n>1 && sum==n) per=true;
 	if (per)

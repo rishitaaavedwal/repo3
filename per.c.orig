@@ -1,20 +1,20 @@
 #include <stdio.h>
-#include <math.h>
 #include <stdbool.h>
 #include <math.h>
 int main()
 {
-	int n=28, sum=1;
 <<<<<<< HEAD
+	int n=28, sum=1;
 	bool per=false;
-=======
->>>>>>> yo
 	for (int i=2; i*i<=n; i++)
+=======
+	int n=28, sum=1, i=2;
+	while (i*i<n)
+>>>>>>> yoo
 	{
 		if (n%i==0)
 		{
 			sum+=i;
-<<<<<<< HEAD
 			if (i*i!=n)
 			{
 				sum+=n/i;
@@ -23,13 +23,13 @@ int main()
 		if(sum>n)
 		{
 			break;
-=======
+		}
 			if(i*i!=n)
 			{
 				sum+=n/i;
 			}
->>>>>>> yo
 		}
+		i++;
 	}
 	if (n>1 && sum==n) per=true;
 	if (per)
