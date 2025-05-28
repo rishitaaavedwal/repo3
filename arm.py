@@ -1,6 +1,9 @@
-def is_armstrong(n):
-    digits = str(n)
-    return sum(int(d) ** len(digits) for d in digits) == n
+def armstrong_recursive(num, n):
+    if num == 0:
+        return 0
+    digit = num % 10
+    return digit ** n + armstrong_recursive(num // 10, n)
 
 num = int(input("Enter a number: "))
-print("Armstrong number" if is_armstrong(num) else "Not an Armstrong number")
+n = len(str(num))
+print("Armstrong number" if armstrong_recursive(num, n) == num else "Not an Armstrong number")
