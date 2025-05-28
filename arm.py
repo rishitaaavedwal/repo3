@@ -1,11 +1,11 @@
+class ArmstrongChecker:
+    def __init__(self, num):
+        self.num = num
+
+    def is_armstrong(self):
+        n = len(str(self.num))
+        return self.num == sum(int(d)**n for d in str(self.num))
+
 num = int(input("Enter a number: "))
-original = num
-n = len(str(num))
-result = 0
-
-while num > 0:
-    digit = num % 10
-    result += digit ** n
-    num //= 10
-
-print("Armstrong number" if result == original else "Not an Armstrong number")
+checker = ArmstrongChecker(num)
+print("Armstrong number" if checker.is_armstrong() else "Not an Armstrong number")
