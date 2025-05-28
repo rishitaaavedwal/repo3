@@ -1,11 +1,6 @@
 num = int(input("Enter a number: "))
-original = num
-n = len(str(num))
-result = 0
+digits = list(map(int, str(num)))
+n = len(digits)
+total = sum(map(lambda x: x ** n, digits))
 
-while num > 0:
-    digit = num % 10
-    result += digit ** n
-    num //= 10
-
-print("Armstrong number" if result == original else "Not an Armstrong number")
+print("Armstrong number" if total == num else "Not an Armstrong number")
