@@ -1,9 +1,6 @@
+def is_armstrong(n):
+    digits = str(n)
+    return sum(int(d) ** len(digits) for d in digits) == n
+
 num = int(input("Enter a number: "))
-digits = str(num)
-n = len(digits)
-total = 0
-
-for d in digits:
-    total += int(d) ** n
-
-print("Armstrong number" if total == num else "Not an Armstrong number")
+print("Armstrong number" if is_armstrong(num) else "Not an Armstrong number")
